@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <img class="header__icon" src="images/logo.png" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link">Інтерактив </a> <a class="dropdown__icon">
+                            <img class="header__dropdown" src="images/dropdown.png" alt="dropdown">
+                        </a>
+                    <li class="header__item"><a href="#" class="header__link">Наша Команда</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Контакти</a></li>
+
+                </ul>
+                <button class="header__switch">
+                    <img class="header__switch-icon" src="images/bright.png" alt="switch">
+                </button>
+                <p class="header__text">Вітаємо, User!</p>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="years">
+            <div class="container">
+                <h1 class="title">
+                    Популярні інетрактивні ігри
+                </h1>
+                <hr class="line">
+                <h2 class="title">Перевір в який рік ти народився</h2>
+                <form action="" class="form">
+                    <input class="form__input" type="text" placeholder="Введіть рік народження">
+                    <button class="form__button" type="button">
+                        <img class="form__button-icon" src="images/loopa.png" alt="loopa">
+                    </button>
+                </form>
+                <p class="years__text">Ви народилися у високосний рік!</p>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="randnamb">
+            <div class="container">
+                <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
+                <form action="" class="form">
+                    <input class="form__input" type="text" placeholder="Введіть число">
+                    <button class="form__button" type="button">
+                        <img class="form__button-icon" src="images/loopa.png" alt="loopa">
+                    </button>
+                </form>
+                <p class="randnamb__text">Вітаю, ви вгадали число! (number) </p>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="game">
+            <div class="container">
+                <h2 class="title">Камінь - ножиці - папір</h2>
+                <ul class="game__list">
+                    <li class="game__item">
+                        <button class="game__btn">
+                            <img class="game__img" src="images/stone.png" alt="stone">
+                        </button>
+                    </li>
+                    <li class="game__item">
+                        <button class="game__btn">
+                            <img class="game__img" src="images/scissors.png" alt="scissors">
+                        </button>
+                    </li>
+                    <li class="game__item">
+                        <button class="game__btn">
+                            <img class="game__img" src="images/paper.png" alt="paper">
+                        </button>
+                    </li>
+                </ul>
+                <ul class="game__list-total">
+                    <li class="total__item">
+                        <p class="total__text">Рахунок:</p>
+                    </li>
+                    <li class="total__item">
+                        <p class="total__text">Комп’ютер - 0</p>
+                    </li>
+                    <li class="total__item">
+                        <p class="total__text">Ви - 0</p>
+                    </li>
+                </ul>
+                <p class="game__text">Ви виграли раунд!</p>
+                <button class="game__btn-comp" type="button">Варіант комп’ютера</button>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="calc">
+            <div class="container">
+                <h2 class="calc__title">Калькулятор</h2>
+                <form action="" class="calc__form">
+                    <input type="text" class="calc__input" placeholder="Введіть число">
+                    <button type="button" class="calc__btn">+</button>
+                    <button type="button" class="calc__btn">*</button>
+                    <button type="button" class="calc__btn">-</button>
+                    <button type="button" class="calc__btn">/</button>
+                    <input type="text" class="calc__input" placeholder="Введіть число">
+                    <button type="button" class="calc__btn">=</button>
+                    <input type="text" class="calc__input" placeholder="Результат">
+                </form>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="time">
+            <div class="container">
+                <h2 class="time__title">Калькулятор часу</h2>
+                <form action="" class="time__form">
+                    <input class="time__input" type="text" placeholder="Введіть число">
+                    <button class="time__button" type="button">
+                        <img class="time__button-icon" src="images/loopa.png" alt="loopa">
+                    </button>
+                </form>
+                <p class="time__text">3 дн. 15:45:01</p>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="dinosaur">
+            <div class="container">
+                <h2 class="dinosaur__title">Google динозавр</h2>
+                <img src="/images/dino.svg" alt="dino google" width="100px" height="100px">
+                <hr class="line">
+            </div>
+        </section>
+        <section class="football">
+            <div class="container">
+                <h2 class="football__title">Футбол</h2>
+                <div class="football__field">
+                    <img src="/images/ball.png" alt="ball">
+                </div>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="enternum">
+            <div class="container">
+                <h2 class="enternum__title">Введіть 3 числа</h2>
+                <form action="" class="enternum__form">
+                    <input type="text" class="enternum__input" placeholder="Введіть число">
+                    <input type="text" class="enternum__input" placeholder="Введіть число">
+                    <input type="text" class="enternum__input" placeholder="Введіть число">
+                </form>
+                <p class="enternum__text">Найбільше число, яке ви ввели - (число)</p>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <h2 class="team__title">Наша команда</h2>
+                <ul class="team__list">
+                    <li class="team__item">
+                        <img src="" alt="" class="team__img">
+                        <p class="team__name"></p>
+                    </li>
+                    <li class="team__item">
+                        <img src="" alt="" class="team__img">
+                        <p class="team__name"></p>
+                    </li>
+                    <li class="team__item">
+                        <img src="" alt="" class="team__img">
+                        <p class="team__name"></p>
+                    </li>
+                    <li class="team__item">
+                        <img src="" alt="" class="team__img">
+                        <p class="team__name"></p>
+                    </li>
+                </ul>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="choose">
+            <div class="container">
+                <h2 class="choose__title">Обери вченого/их</h2>
+
+                <ul class="choose__list">
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                </ul>
+                <ul class="choose__list--left">
+                    <li class="choose__item--left"><button type="button" class="choose__item--left">Які вчені народилися
+                            в 19 ст.</button></li>
+                    <li class="choose__item--left"><button type="button" class="choose__item--left">Відсортувати вчених
+                            за алфавітом</button></li>
+                    <li class="choose__item--left"><button type="button" class="choose__item--left">Відсортувати вчених
+                            за кількістю прожитих років</button></li>
+                    <li class="choose__item--left"><button type="button" class="choose__item--left">Знайти вченого, який
+                            народився найпізніше</button></li>
+                </ul>
+
+                <ul class="choose__list--right">
+                    <li class="choose__item--right"><button type="button" class="choose__item--right">Знайти рік
+                            народження Albert Einshtein</button></li>
+                    <li class="choose__item--right"><button type="button" class="choose__item--right">Знайти вчених,
+                            прізвища яких починаються на на літеру “С” </button></li>
+                    <li class="choose__item--right"><button type="button" class="choose__item--right">Видалити всіх
+                            вчених, ім’я яких починається на “А”</button></li>
+                    <li class="choose__item--right"><button type="button" class="choose__item--right">Знайти вченого,
+                            який прожив найдовше і вченого,
+                            який прожив найменше</button></li>
+                </ul>
+                <button type="button" class="choose__btn">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="footer__logo">
+                <img class="footer__icon" src="images/logo.png" alt="logo">
+            </a>
+
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="tel:+381234567890" class="footer__link">Тел: +38 (123) 456 78 90</a>
+                </li>
+                <li class="footer__item">
+                    <a href="mailto:codingmagic@gmail.com" class="footer__text">E-Mail: codingmagic@gmail.com</a>
+                </li>
+                <li class="footer__item">
+                    <p class="footer__text">Facebook: CodingMagic</p>
+                </li>
+                <li class="footer__item">
+                    <p class="footer__text">Twitter: CodingMagic</p>
+                </li>
+                <li class="footer__item">
+                    <p class="footer__text">Instagram: CodingMagic</p>
+                </li>
+            </ul>
+            <form class="footer__form" action="">
+                <input class="footer__input" type="text" placeholder="Ваша ел. адреса...">
+                <button type="button" class="footer__btn">Підписатись</button>
+            </form>
+            <p class="footer__desc">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+        </div>
+    </footer>
+</body>
+
+</html>
