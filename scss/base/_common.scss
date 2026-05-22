@@ -1,0 +1,21 @@
+@use '../utils/variables' as *;
+.main{
+    background: $main-bg url("../images/main-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body{
+    font-family: $font-family;
+    font-size: 12px;
+}
+.container{
+    margin: 0 auto;
+    width: 1090px;
+    text-align: center;
+    
+    background-color: $bg-color;
+}
+
+a {
+  text-decoration: none;
+}

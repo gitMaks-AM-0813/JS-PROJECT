@@ -1,0 +1,8 @@
+@use '../utils/variables' as *;
+.title{
+font-family: $font-family;
+font-weight: 400;
+font-size: 16px;
+padding-top: 36px;
+padding-bottom: 36px;
+}

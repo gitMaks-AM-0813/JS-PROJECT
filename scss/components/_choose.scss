@@ -1,0 +1,7 @@
+@use '../utils/variables' as *;
+.choose{
+    &__img{
+        width: 100px;
+        height: 100px;
+    }
+}

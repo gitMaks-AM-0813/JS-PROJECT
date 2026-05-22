@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bilbo+Swash+Caps&family=Bungee+Tint&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=MonteCarlo&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bilbo+Swash+Caps&family=Bungee+Tint&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=MonteCarlo&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <a href="#" class="header__logo">
                 <img class="header__icon" src="images/logo.png" alt="logo">
             </a>
+            <div class="header__wrapper">
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item"><a href="#" class="header__link">Інтерактив </a> <a class="dropdown__icon">
@@ -22,47 +26,55 @@
                     <li class="header__item"><a href="#" class="header__link">Контакти</a></li>
 
                 </ul>
+                </nav>
+                     
                 <button class="header__switch">
                     <img class="header__switch-icon" src="images/bright.png" alt="switch">
                 </button>
                 <p class="header__text">Вітаємо, User!</p>
-            </nav>
+                </div>
         </div>
     </header>
     <main class="main">
         <section class="years">
-            <div class="container">
-                <h1 class="title">
+            <div class="container years__container">
+                <h1 class="title years__title--size">
                     Популярні інетрактивні ігри
                 </h1>
                 <hr class="line">
                 <h2 class="title">Перевір в який рік ти народився</h2>
-                <form action="" class="form">
-                    <input class="form__input" type="text" placeholder="Введіть рік народження">
-                    <button class="form__button" type="button">
-                        <img class="form__button-icon" src="images/loopa.png" alt="loopa">
+                <div class="years__wrapper">
+                <form action="" class="years__form">
+                    <input class="years__input" type="text" placeholder="Введіть рік народження">
+                    <button class="years__button" type="button">
+                        <img class="years__button-icon" src="images/loopa.png" alt="loopa">
                     </button>
                 </form>
                 <p class="years__text">Ви народилися у високосний рік!</p>
+                </div>
                 <hr class="line">
+                
             </div>
         </section>
         <section class="randnamb">
             <div class="container">
                 <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
-                <form action="" class="form">
-                    <input class="form__input" type="text" placeholder="Введіть число">
-                    <button class="form__button" type="button">
-                        <img class="form__button-icon" src="images/loopa.png" alt="loopa">
+                <div class="randnamb__wrapper">
+                <form action="" class="randnamb__form">
+                    <input class="randnamb__input" type="text" placeholder="Введіть число">
+                    <button class="randnamb__button" type="button">
+                        <img class="randnamb__button-icon" src="images/loopa.png" alt="loopa">
                     </button>
                 </form>
                 <p class="randnamb__text">Вітаю, ви вгадали число! (number) </p>
+                </div>
                 <hr class="line">
             </div>
         </section>
         <section class="game">
             <div class="container">
                 <h2 class="title">Камінь - ножиці - папір</h2>
+                <div class="game__wrapper">
                 <ul class="game__list">
                     <li class="game__item">
                         <button class="game__btn">
@@ -80,6 +92,9 @@
                         </button>
                     </li>
                 </ul>
+                <p class="game__text">Ви виграли раунд!</p>
+                <button class="game__btn-comp" type="button">Варіант комп’ютера</button>
+                </div>
                 <ul class="game__list-total">
                     <li class="total__item">
                         <p class="total__text">Рахунок:</p>
@@ -91,8 +106,6 @@
                         <p class="total__text">Ви - 0</p>
                     </li>
                 </ul>
-                <p class="game__text">Ви виграли раунд!</p>
-                <button class="game__btn-comp" type="button">Варіант комп’ютера</button>
                 <hr class="line">
             </div>
         </section>
@@ -182,18 +195,18 @@
                 <h2 class="choose__title">Обери вченого/их</h2>
 
                 <ul class="choose__list">
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
-                    <li class="choose__item"><img src="" alt="" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/ada.lovelace.webp" alt="ada lovelace" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/albert_einstein.jpg" alt="albert einshtein" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/galileo.galilei.jpg" alt="galileo galilei" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/hanna_hammarström.jpg" alt="hanna hammarström" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/katharine_blodgett.jpg" alt="katharine blodgett" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/lise_meitner.jpg" alt="lise lise meitner" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/isaac_newton.jpg" alt="isaac newton" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/johannes_kepler.jpg" alt="johannes kepler" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/marie_curie.jpg" alt="marie curie" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/nikolaus_kopernikus.jpg" alt="nikolaus kopernikus" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/sarah_goode.png" alt="sarah goode" class="choose__img"></li>
+                    <li class="choose__item"><img src="images/max_planck.jpg" alt="max planck" class="choose__img"></li>
                 </ul>
                 <ul class="choose__list--left">
                     <li class="choose__item--left"><button type="button" class="choose__item--left">Які вчені народилися
@@ -222,7 +235,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="footer__container">
             <a href="#" class="footer__logo">
                 <img class="footer__icon" src="images/logo.png" alt="logo">
             </a>

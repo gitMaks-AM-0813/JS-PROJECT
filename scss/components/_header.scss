@@ -1,0 +1,39 @@
+@use "../utils/variables" as *;
+.header {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__logo {
+    padding-right: 81px;
+  }
+  &__icon {
+    height: 38px;
+    width: 93px;
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+  &__link {
+    font-family: $font-family;
+    font-size: 12px;
+    color: $font-color;
+  }
+  &__switch {
+    border-radius: 25px;
+  }
+  &__text {
+    font-family: $font-family;
+    font-size: 12px;
+  }
+}

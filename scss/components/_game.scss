@@ -1,0 +1,16 @@
+@use "../utils/variables" as *;
+.game {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+  }
+  &__btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: $font-color;
+    border: none;
+  }
+
+}
