@@ -122,6 +122,33 @@ a {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 12px;
 }
+.header__submenu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+  border-radius: 0 0 20px 20px;
+}
+.header__submenu-link {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  padding-bottom: 20px;
+  padding-left: 56px;
+  padding-right: 55px;
+}
+.header__item:hover .header__submenu {
+  position: relative;
+  display: block;
+  transition: 0.5s;
+}
 
 .line {
   width: 536px;
@@ -129,10 +156,22 @@ a {
   margin-top: 36px;
 }
 
+.football__field {
+  border-radius: 37px;
+  width: 720px;
+  height: 220px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(90, 187, 88);
+}
+
+.game__container {
+  position: relative;
+}
 .game__list {
   display: flex;
   justify-content: center;
   gap: 38px;
+  padding-bottom: 36px;
 }
 .game__btn {
   width: 60px;
@@ -140,6 +179,38 @@ a {
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
   border: none;
+}
+.game__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(3, 153, 0);
+  padding-bottom: 36px;
+}
+.game__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.game__btn-comp {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat Alternates", sans-serif;
+  border: none;
+}
+.game__list-total {
+  position: absolute;
+  top: 100px;
+  right: 220px;
+}
+.game__total-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  color: rgb(0, 0, 0);
+  text-align: left;
 }
 
 .randnamb__input {
@@ -182,6 +253,22 @@ a {
   position: absolute;
   left: 200px;
   border: none;
+}
+
+.enternum__form {
+  display: flex;
+  gap: 38px;
+}
+.enternum__input {
+  background-color: rgb(215, 215, 215);
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.enternum__input::-moz-placeholder {
+  color: rgb(126, 126, 126);
+}
+.enternum__input::placeholder {
+  color: rgb(126, 126, 126);
 }
 
 .years__title--size {
@@ -230,7 +317,132 @@ a {
   border: none;
 }
 
+.time__input {
+  background-color: rgb(215, 215, 215);
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  border: none;
+}
+.time__input::-moz-placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.time__input::placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.time__form {
+  position: relative;
+}
+.time__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+.time__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  text-align: right;
+  color: rgb(0, 0, 0);
+}
+.time__text::before {
+  content: "";
+  border-bottom: 2px dotted rgb(0, 0, 0);
+  width: 100px;
+  height: 1px;
+  display: inline-block;
+  margin-right: 33px;
+}
+.time__button {
+  background-color: rgb(0, 0, 0);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 8px;
+  position: absolute;
+  left: 200px;
+  border: none;
+}
+
 .choose__img {
   width: 100px;
   height: 100px;
+}
+
+.calc__input {
+  background-color: rgb(215, 215, 215);
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  border: none;
+  width: 135px;
+}
+.calc__input::-moz-placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.calc__input::placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.calc__input-two {
+  background-color: rgb(215, 215, 215);
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  border: none;
+  width: 135px;
+}
+.calc__input-two::-moz-placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.calc__input-two::placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.calc__input-result {
+  background-color: rgb(215, 215, 215);
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  border: none;
+  width: 135px;
+}
+.calc__input-result::-moz-placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.calc__input-result::placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.calc__btn {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 27px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+}
+.calc__span {
+  color: rgb(255, 255, 255);
+}
+.calc__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.calc__btn-wrapper {
+  max-width: 65px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }

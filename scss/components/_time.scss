@@ -1,1 +1,49 @@
 @use '../utils/variables' as *;
+.time{
+    &__input {
+    background-color: $input-bg;
+    border-radius: 20px;
+    padding: 10px 45px 10px 10px;
+    border: none;
+   
+    &::placeholder{
+        font-family: $font-family;
+        font-size: 12px;
+        color: $placeholder-color;
+    }
+  }
+  &__form{
+    position: relative;
+  }
+    &__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-size: 12px;
+    text-align: right;
+    color: $title-color;
+     &::before{
+        content: "";
+        border-bottom: 2px dotted $title-color;
+        width: 100px;
+        height: 1px;
+        display: inline-block;
+        margin-right: 33px;
+    }
+  }
+
+    &__button{
+    background-color: $font-color;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 8px;
+    position: absolute;
+    left: 200px;
+    border: none;
+  }
+}

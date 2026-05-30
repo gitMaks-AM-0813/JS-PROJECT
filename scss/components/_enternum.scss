@@ -1,1 +1,16 @@
 @use '../utils/variables' as *;
+.enternum {
+   
+    &__form {
+        display: flex;
+        gap: 38px;
+    }
+    &__input {
+        background-color: $input-bg;
+        border-radius: 20px;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        &::placeholder{
+            color: $placeholder-color;
+        }
+    }
+}

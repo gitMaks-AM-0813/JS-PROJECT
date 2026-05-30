@@ -36,4 +36,35 @@
     font-family: $font-family;
     font-size: 12px;
   }
-}
+  &__submenu {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: $bg-color;
+    display: none;
+border-bottom: 1px solid $font-color;
+border-left: 1px solid $font-color;
+border-right: 1px solid $font-color;
+    border-radius: 0 0 20px 20px;
+  }
+  &__submenu-link {
+    display: block;
+    color: $font-color;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 12px;
+    
+    padding-bottom: 20px;
+    padding-left: 56px;
+    padding-right: 55px;
+  }
+  &__item:hover .header__submenu{
+    position: relative;
+      display: block;
+      transition: 0.5s;
+    }
+    
+  }
+
+

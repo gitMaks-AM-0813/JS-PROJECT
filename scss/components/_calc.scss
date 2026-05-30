@@ -1,1 +1,64 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
+.calc {
+  &__input {
+    background-color: $input-bg;
+    border-radius: 20px;
+    padding: 10px 45px 10px 10px;
+    border: none;
+    width: 135px;
+    &::placeholder {
+      font-family: $font-family;
+      font-size: 12px;
+      color: $placeholder-color;
+    }
+  }
+  &__input-two{
+     background-color: $input-bg;
+    border-radius: 20px;
+    padding: 10px 45px 10px 10px;
+    border: none;
+    width: 135px;
+    &::placeholder {
+      font-family: $font-family;
+      font-size: 12px;
+      color: $placeholder-color;
+    }
+  }
+  &__input-result{
+     background-color: $input-bg;
+    border-radius: 20px;
+    padding: 10px 45px 10px 10px;
+    border: none;
+    width: 135px;
+    &::placeholder {
+      font-family: $font-family;
+      font-size: 12px;
+      color: $placeholder-color;
+    }
+  }
+
+  &__btn {
+    background-color: $font-color;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 27px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  &__span{
+    color: $bg-color
+  }
+  &__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+  }
+&__btn-wrapper{
+    max-width: 65px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+}

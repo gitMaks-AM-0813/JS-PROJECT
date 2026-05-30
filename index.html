@@ -7,7 +7,7 @@
     <link href="./css/main.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Antic&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bilbo+Swash+Caps&family=Bungee+Tint&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=MonteCarlo&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Antic&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bilbo+Swash+Caps&family=Bungee+Tint&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=MonteCarlo&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>JS-PROJECT</title>
 </head>
 
 <body>
@@ -22,6 +22,18 @@
                     <li class="header__item"><a href="#" class="header__link">Інтерактив </a> <a class="dropdown__icon">
                             <img class="header__dropdown" src="images/dropdown.png" alt="dropdown">
                         </a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">Числовий</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">Ігровий</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">Ознайомчий</a>
+                            </li>
+                        </ul>
+                        </li>
                     <li class="header__item"><a href="#" class="header__link">Наша Команда</a></li>
                     <li class="header__item"><a href="#" class="header__link">Контакти</a></li>
 
@@ -72,7 +84,7 @@
             </div>
         </section>
         <section class="game">
-            <div class="container">
+            <div class="container game__container">
                 <h2 class="title">Камінь - ножиці - папір</h2>
                 <div class="game__wrapper">
                 <ul class="game__list">
@@ -93,41 +105,44 @@
                     </li>
                 </ul>
                 <p class="game__text">Ви виграли раунд!</p>
-                <button class="game__btn-comp" type="button">Варіант комп’ютера</button>
                 </div>
                 <ul class="game__list-total">
                     <li class="total__item">
-                        <p class="total__text">Рахунок:</p>
+                        <p class="game__total-text">Рахунок:</p>
                     </li>
                     <li class="total__item">
-                        <p class="total__text">Комп’ютер - 0</p>
+                        <p class="game__total-text">Комп’ютер - 0</p>
                     </li>
                     <li class="total__item">
-                        <p class="total__text">Ви - 0</p>
+                        <p class="game__total-text">Ви - 0</p>
                     </li>
                 </ul>
+                <button class="game__btn-comp" type="button">Варіант комп’ютера</button>
                 <hr class="line">
             </div>
         </section>
         <section class="calc">
             <div class="container">
-                <h2 class="calc__title">Калькулятор</h2>
+                <h2 class="title">Калькулятор</h2>
                 <form action="" class="calc__form">
                     <input type="text" class="calc__input" placeholder="Введіть число">
-                    <button type="button" class="calc__btn">+</button>
-                    <button type="button" class="calc__btn">*</button>
-                    <button type="button" class="calc__btn">-</button>
-                    <button type="button" class="calc__btn">/</button>
-                    <input type="text" class="calc__input" placeholder="Введіть число">
-                    <button type="button" class="calc__btn">=</button>
-                    <input type="text" class="calc__input" placeholder="Результат">
+                    <div class="calc__btn-wrapper">
+                    <button onclick="calculate('+')" type="button" class="calc__btn"><span class="calc__span">+</span></button>
+                    <button onclick="calculate('*')" type="button" class="calc__btn"><span class="calc__span">*</span></button>
+                    <button onclick="calculate('-')"   type="button" class="calc__btn"><span class="calc__span">-</span></button>
+                    <button onclick="calculate('/')" type="button" class="calc__btn"><span class="calc__span">/</span></button>
+                    </div>
+                    <input type="text" class="calc__input-two" placeholder="Введіть число">
+                    <button type="button" class="calc__btn"><span class="calc__span">=</span></button>
+                    <input type="text" class="calc__input-result" placeholder="Результат">
                 </form>
                 <hr class="line">
             </div>
         </section>
         <section class="time">
             <div class="container">
-                <h2 class="time__title">Калькулятор часу</h2>
+                <h2 class="title">Калькулятор часу</h2>
+                <div class="time__wrapper">
                 <form action="" class="time__form">
                     <input class="time__input" type="text" placeholder="Введіть число">
                     <button class="time__button" type="button">
@@ -135,28 +150,31 @@
                     </button>
                 </form>
                 <p class="time__text">3 дн. 15:45:01</p>
+                </div>
                 <hr class="line">
             </div>
         </section>
         <section class="dinosaur">
-            <div class="container">
-                <h2 class="dinosaur__title">Google динозавр</h2>
+            <div class="container ">
+                <h2 class="title">Google динозавр</h2>
                 <img src="/images/dino.svg" alt="dino google" width="100px" height="100px">
                 <hr class="line">
             </div>
         </section>
         <section class="football">
-            <div class="container">
-                <h2 class="football__title">Футбол</h2>
+            <div class="container ">
+                <h2 class="title">Футбол</h2>
+                <div class="dinosaur__wrapper">
                 <div class="football__field">
                     <img src="/images/ball.png" alt="ball">
+                </div>
                 </div>
                 <hr class="line">
             </div>
         </section>
         <section class="enternum">
             <div class="container">
-                <h2 class="enternum__title">Введіть 3 числа</h2>
+                <h2 class="title">Введіть 3 числа</h2>
                 <form action="" class="enternum__form">
                     <input type="text" class="enternum__input" placeholder="Введіть число">
                     <input type="text" class="enternum__input" placeholder="Введіть число">
@@ -168,7 +186,7 @@
         </section>
         <section class="team">
             <div class="container">
-                <h2 class="team__title">Наша команда</h2>
+                <h2 class="title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
                         <img src="" alt="" class="team__img">
@@ -192,7 +210,7 @@
         </section>
         <section class="choose">
             <div class="container">
-                <h2 class="choose__title">Обери вченого/их</h2>
+                <h2 class="title">Обери вченого/их</h2>
 
                 <ul class="choose__list">
                     <li class="choose__item"><img src="images/ada.lovelace.webp" alt="ada lovelace" class="choose__img"></li>
@@ -264,6 +282,7 @@
             <p class="footer__desc">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
