@@ -1,12 +1,17 @@
 @use "../utils/variables" as *;
 .football {
-   
-  &__field {
-    border-radius: 37px;
-    width: 720px;
-    height: 220px;
-    border: 2px solid $font-color;
-    background-color: $ball-bg;
     
-  }
+    &__field {
+        width: 720px;
+        height: 220px;
+        background-color: $ball-bg;
+        border-radius: 37px;
+        border: 2px $font-color solid;
+        margin: 0 auto;
+    }
+
+  
 }
+    
+  
+

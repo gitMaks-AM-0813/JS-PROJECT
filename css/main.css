@@ -70,7 +70,6 @@ hr {
 .container {
   margin: 0 auto;
   width: 1090px;
-  text-align: center;
   background-color: rgb(255, 255, 255);
 }
 
@@ -84,6 +83,7 @@ a {
   font-size: 16px;
   padding-top: 36px;
   padding-bottom: 36px;
+  text-align: center;
 }
 
 .header {
@@ -157,15 +157,17 @@ a {
 }
 
 .football__field {
-  border-radius: 37px;
   width: 720px;
   height: 220px;
-  border: 2px solid rgb(0, 0, 0);
   background-color: rgb(90, 187, 88);
+  border-radius: 37px;
+  border: 2px rgb(0, 0, 0) solid;
+  margin: 0 auto;
 }
 
 .game__container {
   position: relative;
+  text-align: center;
 }
 .game__list {
   display: flex;
@@ -186,6 +188,7 @@ a {
   font-size: 12px;
   color: rgb(3, 153, 0);
   padding-bottom: 36px;
+  text-align: center;
 }
 .game__wrapper {
   display: flex;
@@ -218,6 +221,7 @@ a {
   border-radius: 20px;
   padding: 10px 45px 10px 10px;
   border: none;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .randnamb__input::-moz-placeholder {
   font-family: "Montserrat Alternates", sans-serif;
@@ -255,20 +259,141 @@ a {
   border: none;
 }
 
+.team__img {
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+}
+.team__name {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat Alternates", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.team__desc {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+.team__item {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .enternum__form {
   display: flex;
   gap: 38px;
+  justify-content: center;
+}
+.enternum__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 36px;
 }
 .enternum__input {
   background-color: rgb(215, 215, 215);
   border-radius: 20px;
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  border: none;
+  width: 135px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .enternum__input::-moz-placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
   color: rgb(126, 126, 126);
 }
 .enternum__input::placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
   color: rgb(126, 126, 126);
+}
+.enternum__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  padding: 61px 174px 59px 175px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__icon {
+  height: 70px;
+  width: 165px;
+}
+.footer__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  color: rgb(0, 0, 0);
+}
+.footer__link {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  color: rgb(0, 0, 0);
+}
+.footer__input {
+  background-color: rgb(215, 215, 215);
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  border: none;
+}
+.footer__input::-moz-placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.footer__input::placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  color: rgb(126, 126, 126);
+}
+.footer__btn {
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  margin-left: 36px;
+}
+.footer__form {
+  padding-bottom: 36px;
+}
+.footer__desc {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 6px;
+}
+
+.dinosaur__wrapper {
+  width: 720px;
+  height: 241px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .years__title--size {
@@ -283,6 +408,7 @@ a {
   border-radius: 20px;
   padding: 10px 45px 10px 10px;
   border: none;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .years__input::-moz-placeholder {
   font-family: "Montserrat Alternates", sans-serif;
@@ -322,6 +448,7 @@ a {
   border-radius: 20px;
   padding: 10px 45px 10px 10px;
   border: none;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .time__input::-moz-placeholder {
   font-family: "Montserrat Alternates", sans-serif;
@@ -369,6 +496,76 @@ a {
 .choose__img {
   width: 100px;
   height: 100px;
+  border-radius: 20px;
+}
+.choose__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px 60px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 36px;
+}
+.choose__item {
+  width: 100px;
+  height: 100px;
+}
+.choose__list--right {
+  padding-left: 36px;
+}
+.choose__btn--left {
+  border-radius: 20px;
+  padding: 10px 20px;
+  height: 35px;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 12px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+.choose__btn--right {
+  border-radius: 20px;
+  padding: 10px 20px;
+  height: 35px;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 12px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+.choose__btn {
+  border-radius: 20px;
+  padding: 10px 20px;
+  height: 35px;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 12px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.choose__item--right {
+  padding-bottom: 20px;
+}
+.choose__item--left {
+  padding-bottom: 20px;
+}
+.choose__wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .calc__input {
@@ -377,6 +574,7 @@ a {
   padding: 10px 45px 10px 10px;
   border: none;
   width: 135px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .calc__input::-moz-placeholder {
   font-family: "Montserrat Alternates", sans-serif;
@@ -394,6 +592,7 @@ a {
   padding: 10px 45px 10px 10px;
   border: none;
   width: 135px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .calc__input-two::-moz-placeholder {
   font-family: "Montserrat Alternates", sans-serif;
@@ -411,6 +610,7 @@ a {
   padding: 10px 45px 10px 10px;
   border: none;
   width: 135px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .calc__input-result::-moz-placeholder {
   font-family: "Montserrat Alternates", sans-serif;

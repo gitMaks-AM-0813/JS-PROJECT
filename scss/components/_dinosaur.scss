@@ -1,1 +1,10 @@
 @use '../utils/variables' as *;
+.dinosaur{
+    &__wrapper{
+        
+        width:720px; 
+        height:241px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
