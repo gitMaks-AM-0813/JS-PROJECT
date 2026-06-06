@@ -31,4 +31,12 @@
      display: flex;
     justify-content: center;
   }
+  &__submit{
+     border-radius: 20px;
+    padding: 10px 20px;
+    background-color: $font-color;
+    color: $icon-color;
+    font-family: $font-family;
+    border: none;
+  }
 }

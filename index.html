@@ -56,34 +56,39 @@
         <section class="years">
             <div class="container years__container">
                 <h1 class="title years__title--size">
-                    Популярні інетрактивні ігри
+                    Популярні інтерактивні ігри
                 </h1>
+
                 <hr class="line">
+
                 <h2 class="title">Перевір в який рік ти народився</h2>
+
                 <div class="years__wrapper">
-                    <form action="" class="years__form">
-                        <input class="years__input" type="text" placeholder="Введіть рік народження">
-                        <button class="years__button" type="button">
+                    <form class="years__form">
+                        <input id="yearInput" class="years__input" type="text" placeholder="Введіть рік народження">
+
+                        <button id="checkButton" class="years__button" type="submit">
                             <img class="years__button-icon" src="images/loopa.png" alt="loopa">
                         </button>
                     </form>
-                    <p class="years__text">Ви народилися у високосний рік!</p>
-                </div>
-                <hr class="line">
 
+                    <p id="result" class="years__text"></p>
+                </div>
+
+                <hr class="line">
             </div>
         </section>
         <section class="randnamb">
             <div class="container">
                 <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
                 <div class="randnamb__wrapper">
-                    <form action="" class="randnamb__form">
-                        <input class="randnamb__input" type="text" placeholder="Введіть число">
-                        <button class="randnamb__button" type="button">
+                    <form class="randnamb__form">
+                        <input class="randnamb__input" type="text" placeholder="Введіть число" id="randnambInput">
+                        <button id="CheckButton" class="randnamb__button" type="submit">
                             <img class="randnamb__button-icon" src="images/loopa.png" alt="loopa">
                         </button>
                     </form>
-                    <p class="randnamb__text">Вітаю, ви вгадали число! (number) </p>
+                    <p id="resultRandnamb" class="randnamb__text"></p>
                 </div>
                 <hr class="line">
             </div>
@@ -130,7 +135,7 @@
             <div class="container">
                 <h2 class="title">Калькулятор</h2>
                 <form action="" class="calc__form">
-                    <input type="text" class="calc__input" placeholder="Введіть число">
+                    <input type="number" class="calc__input" placeholder="Введіть число">
                     <div class="calc__btn-wrapper">
                         <button onclick="calculate('+')" type="button" class="calc__btn"><span
                                 class="calc__span">+</span></button>
@@ -141,9 +146,11 @@
                         <button onclick="calculate('/')" type="button" class="calc__btn"><span
                                 class="calc__span">/</span></button>
                     </div>
-                    <input type="text" class="calc__input-two" placeholder="Введіть число">
-                    <button type="button" class="calc__btn"><span class="calc__span">=</span></button>
-                    <input type="text" class="calc__input-result" placeholder="Результат">
+                    <input type="number" class="calc__input-two" placeholder="Введіть число">
+                    <button onclick="showResult()" type="button" class="calc__btn">
+                        <span class="calc__span">=</span>
+                    </button>
+                    <input type="" class="calc__input-result" placeholder="Результат">
                 </form>
                 <hr class="line">
             </div>
@@ -182,20 +189,23 @@
             </div>
         </section>
         <section class="enternum">
-            <div class="container enternum__container">
-                <h2 class="title">Введіть 3 числа</h2>
-                <div class="enternum__wrapper">
-                    <form action="" class="enternum__form">
-                        <input type="text" class="enternum__input" placeholder="Введіть число">
-                        <input type="text" class="enternum__input" placeholder="Введіть число">
-                        <input type="text" class="enternum__input" placeholder="Введіть число">
-                    </form>
-                </div>
-                <p class="enternum__text">Найбільше число, яке ви ввели - (число)</p>
+    <div class="container enternum__container">
+        <h2 class="title">Введіть 3 числа</h2>
+        <div class="enternum__wrapper">
+            <form class="enternum__form">
+                <input type="number" class="enternum__input" placeholder="Введіть число">
+                <input type="number" class="enternum__input" placeholder="Введіть число">
+                <input type="number" class="enternum__input" placeholder="Введіть число">
+                <button class="enternum__submit" type="submit">Знайти найбільше число</button>
+            </form>
+        </div>
+        <p class="enternum__text">
+            Найбільше число, яке ви ввели -  
+        </p>
 
-                <hr class="line">
-            </div>
-        </section>
+        <hr class="line">
+    </div>
+</section>
         <section class="team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
@@ -257,28 +267,32 @@
                     <li class="choose__item"><img src="images/max_planck.jpg" alt="max planck" class="choose__img"></li>
                 </ul>
                 <div class="choose__wrapper">
-                <ul class="choose__list--left">
-                    <li class="choose__item--left"><button type="button" class="choose__btn--left">Які вчені народилися
-                            в 19 ст.</button></li>
-                    <li class="choose__item--left"><button type="button" class="choose__btn--left">Відсортувати вчених
-                            за алфавітом</button></li>
-                    <li class="choose__item--left"><button type="button" class="choose__btn--left">Відсортувати вчених
-                            за кількістю прожитих років</button></li>
-                    <li class="choose__item--left"><button type="button" class="choose__btn--left">Знайти вченого, який
-                            народився найпізніше</button></li>
-                </ul>
+                    <ul class="choose__list--left">
+                        <li class="choose__item--left"><button type="button" class="choose__btn--left">Які вчені
+                                народилися
+                                в 19 ст.</button></li>
+                        <li class="choose__item--left"><button type="button" class="choose__btn--left">Відсортувати
+                                вчених
+                                за алфавітом</button></li>
+                        <li class="choose__item--left"><button type="button" class="choose__btn--left">Відсортувати
+                                вчених
+                                за кількістю прожитих років</button></li>
+                        <li class="choose__item--left"><button type="button" class="choose__btn--left">Знайти вченого,
+                                який
+                                народився найпізніше</button></li>
+                    </ul>
 
-                <ul class="choose__list--right">
-                    <li class="choose__item--right"><button type="button" class="choose__btn--right">Знайти рік
-                            народження Albert Einshtein</button></li>
-                    <li class="choose__item--right"><button type="button" class="choose__btn--right">Знайти вчених,
-                            прізвища яких починаються на на літеру “С” </button></li>
-                    <li class="choose__item--right"><button type="button" class="choose__btn--right">Видалити всіх
-                            вчених, ім’я яких починається на “А”</button></li>
-                    <li class="choose__item--right"><button type="button" class="choose__btn--right">Знайти вченого,
-                            який прожив найдовше і вченого,
-                            який прожив найменше</button></li>
-                </ul>
+                    <ul class="choose__list--right">
+                        <li class="choose__item--right"><button type="button" class="choose__btn--right">Знайти рік
+                                народження Albert Einshtein</button></li>
+                        <li class="choose__item--right"><button type="button" class="choose__btn--right">Знайти вчених,
+                                прізвища яких починаються на на літеру “С” </button></li>
+                        <li class="choose__item--right"><button type="button" class="choose__btn--right">Видалити всіх
+                                вчених, ім’я яких починається на “А”</button></li>
+                        <li class="choose__item--right"><button type="button" class="choose__btn--right">Знайти вченого,
+                                який прожив найдовше і вченого,
+                                який прожив найменше</button></li>
+                    </ul>
                 </div>
                 <button type="button" class="choose__btn"> 1. Знайти вчених, в яких співпадають перші літери імені і
                     прізвища</button>
@@ -309,11 +323,11 @@
                 </li>
             </ul>
             <div class="footer__wrapper">
-            <form class="footer__form" action="">
-                <input class="footer__input" type="text" placeholder="Ваша ел. адреса...">
-                <button type="button" class="footer__btn">Підписатись</button>
-            </form>
-            <p class="footer__desc">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+                <form class="footer__form" action="">
+                    <input class="footer__input" type="text" placeholder="Ваша ел. адреса...">
+                    <button type="button" class="footer__btn">Підписатись</button>
+                </form>
+                <p class="footer__desc">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
             </div>
         </div>
     </footer>
