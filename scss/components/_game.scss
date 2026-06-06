@@ -16,6 +16,7 @@
     border-radius: 20px;
     background-color: $font-color;
     border: none;
+    cursor: pointer;
   }
   &__text {
     font-family: $font-family;
@@ -36,6 +37,7 @@
     color: $icon-color;
     font-family: $font-family;
     border: none;
+    cursor: pointer;
    
   }
   &__list-total {

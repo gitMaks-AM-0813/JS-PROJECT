@@ -1,7 +1,7 @@
 @use "../utils/variables" as *;
 .footer {
   &__container {
-    padding: 61px 174px 59px 175px;
+    padding: 61px  59px ;
     display: flex;
     justify-content: space-between;
   }
@@ -28,6 +28,7 @@
     border-radius: 20px;
     padding: 10px 45px 10px 10px;
     border: none;
+    outline: none;
     &::placeholder {
       font-family: $font-family;
       font-size: 12px;
@@ -43,6 +44,7 @@
     font-family: $font-family;
     font-size: 12px;
     margin-left: 36px;
+    cursor: pointer;
   }
   &__form {
     padding-bottom: 36px;
